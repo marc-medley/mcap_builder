@@ -60,7 +60,7 @@ install(TARGETS mcap
     ARCHIVE DESTINATION lib      # Static libraries go to lib/
     INCLUDES DESTINATION include # Headers tied to the target go to include/
 )
-install(DIRECTORY ${MCAP_INCLUDE_DIR} DESTINATION include)
+install(DIRECTORY ${MCAP_INCLUDE_DIR}/mcap/ DESTINATION include/mcap)
 
 include(CMakePackageConfigHelpers)
 configure_package_config_file(
